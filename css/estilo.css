@@ -46,9 +46,6 @@ header a {
     font-weight: bold;
     text-shadow: rgba(0, 0, 0, 0.15) 2px 2px 10px;
     text-align: center;
-    background: linear-gradient(#eee, #333);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 nav {
