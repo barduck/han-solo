@@ -1,150 +1,150 @@
 section {
-    margin: auto;
+	margin: auto;
 }
 
 .index {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 
-    h1 {
-        font-family: 'Frank Ruhl Libre', serif;
-        font-size: 6rem;
-        line-height: 6rem;
-        margin-bottom: 2rem;
-        text-shadow: #474747 3px 5px 2px;
+	h1 {
+		font-family: "Frank Ruhl Libre", serif;
+		font-size: 6rem;
+		line-height: 6rem;
+		margin-bottom: 2rem;
+		text-shadow: #474747 3px 5px 2px;
 
-        span {
-            color: $color-secundario;
-        }
-    }
+		span {
+			color: $color-secundario;
+		}
+	}
 
-    p {
-        margin: 0.5rem 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 1rem;
-        font-size: 1.1rem;
-        line-height: 1.8rem;
-        display: inline-block;
-        border-radius: 5px;
+	p {
+		margin: 0.5rem 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 1rem;
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+		display: inline-block;
+		border-radius: 5px;
 
-        &.subtitulo {
-            background-color: rgba(0, 0, 0, 0.4);
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-        }
-    }
+		&.subtitulo {
+			background-color: rgba(0, 0, 0, 0.4);
+			font-size: 0.9rem;
+			padding: 0.5rem 1rem;
+			display: inline-block;
+		}
+	}
 
-    .masInfo {
-        text-transform: uppercase;
-        padding: 2rem 0;
-        color: white;
-        display: inline-block;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-    }
+	.masInfo {
+		text-transform: uppercase;
+		padding: 2rem 0;
+		color: white;
+		display: inline-block;
+		margin: auto;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 .interna {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5rem;
-    margin: 5rem 0;
-    border-radius: 40px;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 5rem;
+	margin: 5rem 0;
+	border-radius: 40px;
 
-    h1 {
-        font-family: 'Frank Ruhl Libre', serif;
-        font-size: 4rem;
-        line-height: 4rem;
-        padding-bottom: 1rem;
-        text-shadow: #474747 3px 5px 2px;
-    }
+	h1 {
+		font-family: "Frank Ruhl Libre", serif;
+		font-size: 4rem;
+		line-height: 4rem;
+		padding-bottom: 1rem;
+		text-shadow: #474747 3px 5px 2px;
+	}
 
-    h2 {
-        text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        padding: 1.5rem 0;
-        color: $color-secundario;
-    }
+	h2 {
+		text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+		font-size: 2.5rem;
+		line-height: 2.5rem;
+		padding: 1.5rem 0;
+		color: $color-secundario;
+	}
 
-    p {
-        padding-bottom: 1rem;
-        line-height: 1.5rem;
-    }
+	p {
+		padding-bottom: 1rem;
+		line-height: 1.5rem;
+	}
 
-    h3 {
-        padding-bottom: 1rem;
-        text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
-        font-size: 1.5rem;
-        color: $color-secundario;
-    }
+	h3 {
+		padding-bottom: 1rem;
+		text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+		font-size: 1.5rem;
+		color: $color-secundario;
+	}
 
-    a {
-        box-shadow: inset 0 0 0 0 $color-secundario;
-        color: $color-primario;
-        transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        text-decoration: underline;
+	a {
+		box-shadow: inset 0 0 0 0 $color-secundario;
+		color: $color-primario;
+		transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		text-decoration: underline;
 
-        &:hover {
-            color: white;
-        }
-    }
+		&:hover {
+			color: white;
+		}
+	}
 }
 
 .oferta {
-    border: 3px dashed $color-secundario;
-    padding: 1rem 1rem 0.2rem 1rem;
-    margin-top: 1rem;
+	border: 3px dashed $color-secundario;
+	padding: 1rem 1rem 0.2rem 1rem;
+	margin-top: 1rem;
 }
 
 .clientesFelices {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding-top: 0.9rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding-top: 0.9rem;
 }
 
 .clienteFeliz {
-    text-align: center;
-    font-size: 0.9rem;
-    background-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	font-size: 0.9rem;
+	background-color: rgba(0, 0, 0, 0.2);
 
-    p {
-        padding: 0 3rem 2rem 3rem;
-    }
+	p {
+		padding: 0 3rem 2rem 3rem;
+	}
 
-    img {
-        border-radius: 300px;
-        width: 250px;
-        margin: 0 0 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 15px;
-    }
+	img {
+		border-radius: 300px;
+		width: 250px;
+		margin: 0 0 20px 0;
+		box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 15px;
+	}
 }
 
 .sobreMi img {
-    float: right;
+	float: right;
 }
 
 .contacto {
-    min-width: 45rem;
+	min-width: 45rem;
 
-    label {
-        display: block;
-        width: 100%;
-        padding: 0.5rem 0;
-    }
+	label {
+		display: block;
+		width: 100%;
+		padding: 0.5rem 0;
+	}
 
-    input,
-    textarea,
-    button {
-        width: 100%;
-        padding: 0.5rem;
-        font-size: 1.1rem;
-    }
+	input,
+	textarea,
+	button {
+		width: 100%;
+		padding: 0.5rem;
+		font-size: 1.1rem;
+	}
 }
 
 .parrafoResaltado {
-    font-weight: bold;
-    padding-top: 3rem;
-    color: $color-secundario;
+	font-weight: bold;
+	padding-top: 3rem;
+	color: $color-secundario;
 }
