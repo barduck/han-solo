@@ -1,0 +1,303 @@
+.btn-primary {
+  background-color: #566ca8; }
+  .btn-primary:hover {
+    background-color: #233370; }
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 60px;
+  height: 26px;
+  border: none;
+  border-radius: 24px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  box-shadow: inset 0 0 0 0 #a7bfe7;
+  color: black;
+  transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-decoration: none; }
+  a:hover {
+    color: #54b3d6; }
+
+button {
+  cursor: pointer; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'header header header' 'main main main' 'footer footer footer'; }
+
+main {
+  grid-area: main;
+  background-image: url("../img/han-solo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #474747;
+  color: white;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around; }
+  main section {
+    max-width: 1300px; }
+
+header {
+  grid-area: header;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto; }
+  header .logo {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 3rem;
+    line-height: 3.3rem;
+    color: #85a5da;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.15) 2px 2px 10px; }
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px; }
+  nav ul {
+    background-color: white; }
+  nav li {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: border 0.2s ease-in-out, border 0.2s ease-in-out; }
+    nav li.marcado a {
+      color: #54b3d6; }
+  nav .navbar-nav li a {
+    padding: 20px 0;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out; }
+    nav .navbar-nav li a:hover, nav .navbar-nav li a:focus, nav .navbar-nav li a:active {
+      transform: translateY(-8px);
+      text-shadow: #b8b8b8 2px 2px 10px;
+      color: #54b3d6; }
+
+section {
+  margin: auto; }
+
+.index {
+  padding-bottom: 40px; }
+  .index h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 2rem;
+    text-shadow: #474747 3px 5px 2px; }
+    .index h1 span {
+      color: #a7bfe7; }
+  .index p {
+    margin: 0.5rem 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    display: inline-block;
+    border-radius: 5px; }
+    .index p.subtitulo {
+      background-color: rgba(0, 0, 0, 0.4);
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      display: inline-block; }
+  .index .masInfo {
+    text-transform: uppercase;
+    padding: 2rem 0;
+    color: white;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 100%; }
+
+.interna {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5rem;
+  margin: 5rem 0;
+  border-radius: 40px; }
+  .interna h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-bottom: 1rem;
+    text-shadow: #474747 3px 5px 2px; }
+  .interna h2 {
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 1.5rem 0;
+    color: #a7bfe7; }
+  .interna p {
+    padding-bottom: 1rem;
+    line-height: 1.5rem; }
+  .interna h3 {
+    padding-bottom: 1rem;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    color: #a7bfe7; }
+  .interna a {
+    box-shadow: inset 0 0 0 0 #a7bfe7;
+    color: #54b3d6;
+    transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: underline; }
+    .interna a:hover {
+      color: white; }
+
+.oferta {
+  border: 3px dashed #a7bfe7;
+  padding: 1rem 1rem 0.2rem 1rem;
+  margin-top: 1rem; }
+
+.clientesFelices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-top: 0.9rem; }
+
+.clienteFeliz {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .clienteFeliz p {
+    padding: 0 3rem 2rem 3rem; }
+  .clienteFeliz img {
+    border-radius: 300px;
+    width: 250px;
+    margin: 0 0 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 15px; }
+
+.sobreMi img {
+  float: right; }
+
+.contacto {
+  min-width: 45rem; }
+  .contacto label {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0; }
+  .contacto input,
+  .contacto textarea,
+  .contacto button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem; }
+
+.parrafoResaltado {
+  font-weight: bold;
+  padding-top: 3rem;
+  color: #a7bfe7; }
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  margin: auto; }
+  footer #newsletter {
+    text-align: center;
+    padding: 3rem; }
+    footer #newsletter h2 {
+      padding-bottom: 2.5rem;
+      text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+      font-size: 1.5rem;
+      opacity: 0.6; }
+    footer #newsletter input[type='email'] {
+      font-family: 'Inter', sans-serif;
+      width: 300px;
+      padding: 1rem;
+      font-size: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+    footer #newsletter input[type='button'] {
+      padding: 1rem;
+      font-size: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: #566ca8;
+      color: white;
+      cursor: pointer; }
+      footer #newsletter input[type='button']:hover {
+        background-color: #233370; }
+    footer #newsletter .redesSociales {
+      display: flex;
+      justify-content: center;
+      font-size: 0.8rem; }
+      footer #newsletter .redesSociales li {
+        display: inline-block;
+        text-align: center;
+        padding: 1rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid white; }
+        footer #newsletter .redesSociales li:hover {
+          border-bottom: 2px solid #a7bfe7; }
+
+@media (max-width: 1400px) {
+  main section,
+  header {
+    max-width: 90%; }
+  nav .navbar-nav li a {
+    padding: 5px; } }
+
+@media (max-width: 810px) {
+  main {
+    min-height: auto; }
+  .index {
+    padding: 2rem 0; }
+  .interna {
+    margin: 2rem 0; }
+  .index h1 {
+    font-size: 5rem;
+    line-height: 5rem; }
+  .contacto {
+    width: 90%;
+    min-width: auto; }
+  .sobreMi img {
+    float: none;
+    margin: auto;
+    display: block; } }
+
+@media (max-width: 700px) {
+  .index h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem; }
+  .interna h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center; }
+  .clientesFelices {
+    grid-template-columns: 1fr; }
+  .sobreMi img {
+    width: 100%; } }
+
+@media (max-width: 620px) {
+  .index h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem; }
+  .interna h1 {
+    font-size: 3rem;
+    line-height: 3rem; }
+  #newsletter input[type='email'] {
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem; }
+  #newsletter input[type='button'] {
+    width: 90%;
+    display: block;
+    margin: auto; } }

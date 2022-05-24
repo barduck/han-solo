@@ -1,0 +1,90 @@
+@media (max-width: 1400px) {
+    main section,
+    header {
+        max-width: 90%;
+    }
+
+    nav {
+        .navbar-nav li a {
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    main {
+        min-height: auto;
+    }
+
+    .index {
+        padding: 2rem 0;
+    }
+
+    .interna {
+        margin: 2rem 0;
+    }
+
+    .index h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .contacto {
+        width: 90%;
+        min-width: auto;
+    }
+
+    .sobreMi img {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .index h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+
+    .interna h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+    }
+
+    .clientesFelices {
+        grid-template-columns: 1fr;
+    }
+
+    .sobreMi img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    .index h1 {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .interna h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #newsletter input {
+        &[type='email'] {
+            width: 90%;
+            display: block;
+            margin: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        &[type='button'] {
+            width: 90%;
+            display: block;
+            margin: auto;
+        }
+    }
+}

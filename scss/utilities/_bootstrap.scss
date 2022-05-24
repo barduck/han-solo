@@ -1,0 +1,15 @@
+.btn-primary {
+    background-color: $color-boton;
+
+    &:hover {
+        background-color: $color-boton-hover;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 26px;
+    border: none;
+    border-radius: 24px;
+}
