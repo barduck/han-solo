@@ -1,42 +1,39 @@
 nav {
-    grid-area: nav;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 120px;
+	grid-area: nav;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 120px;
 
-    ul {
-        background-color: white;
-    }
+	ul {
+		background-color: white;
+	}
 
-    li {
-        display: inline-block;
-        text-align: center;
-        padding: 1rem;
-        text-transform: uppercase;
-        transition: border 0.2s ease-in-out, border 0.2s ease-in-out;
+	li {
+		@include listed-item(inline-block, center, uppercase, 1rem);
+		transition: border 0.2s ease-in-out, border 0.2s ease-in-out;
 
-        &.marcado a {
-            color: $color-primario;
-        }
-    }
+		&.marcado a {
+			color: $color-primario;
+		}
+	}
 
-    .navbar-nav li a {
-        padding: 20px 0;
-        display: inline-block;
-        vertical-align: middle;
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        transition-duration: 0.3s;
-        transition-property: transform;
-        transition-timing-function: ease-out;
+	.navbar-nav li a {
+		padding: 20px 0;
+		display: inline-block;
+		vertical-align: middle;
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		transition-duration: 0.3s;
+		transition-property: transform;
+		transition-timing-function: ease-out;
 
-        &:hover,
-        &:focus,
-        &:active {
-            transform: translateY(-8px);
-            text-shadow: #b8b8b8 2px 2px 10px;
-            color: $color-primario;
-        }
-    }
+		&:hover,
+		&:focus,
+		&:active {
+			transform: translateY(-8px);
+			text-shadow: #b8b8b8 2px 2px 10px;
+			color: $color-primario;
+		}
+	}
 }

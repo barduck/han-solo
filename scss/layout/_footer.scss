@@ -1,58 +1,54 @@
 footer {
-    grid-area: footer;
-    width: 100%;
-    margin: auto;
+	grid-area: footer;
+	width: 100%;
+	margin: auto;
 
-    #newsletter {
-        text-align: center;
-        padding: 3rem;
+	#newsletter {
+		text-align: center;
+		padding: 3rem;
 
-        h2 {
-            padding-bottom: 2.5rem;
-            text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
-            font-size: 1.5rem;
-            opacity: 0.6;
-        }
+		h2 {
+			padding-bottom: 2.5rem;
+			text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+			font-size: 1.5rem;
+			opacity: 0.6;
+		}
 
-        input {
-            &[type='email'] {
-                font-family: 'Inter', sans-serif;
-                width: 300px;
-                padding: 1rem;
-                font-size: 1.5rem;
-                border: 1px solid rgba(0, 0, 0, 0.2);
-            }
+		input {
+			&[type="email"] {
+				width: 300px;
+				padding: 1rem;
+				font-size: 1.5rem;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
 
-            &[type='button'] {
-                padding: 1rem;
-                font-size: 1.5rem;
-                border: 1px solid rgba(0, 0, 0, 0.2);
-                background-color: $color-boton;
-                color: white;
-                cursor: pointer;
+			&[type="button"] {
+				padding: 1rem;
+				font-size: 1.5rem;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				background-color: map-get($color-boton-primario, idle);
+				color: white;
+				cursor: pointer;
 
-                &:hover {
-                    background-color: $color-boton-hover;
-                }
-            }
-        }
-    }
+				&:hover {
+					background-color: map-get($color-boton-primario, idle);
+				}
+			}
+		}
+	}
 
-    .redesSociales {
-        display: flex;
-        justify-content: center;
-        font-size: 0.8rem;
+	.redesSociales {
+		display: flex;
+		justify-content: center;
+		font-size: 0.8rem;
 
-        li {
-            display: inline-block;
-            text-align: center;
-            padding: 1rem;
-            text-transform: uppercase;
-            border-bottom: 2px solid white;
+		li {
+			@include listed-item(inline-block, center, uppercase, 1rem);
+			border-bottom: 2px solid white;
 
-            &:hover {
-                border-bottom: 2px solid $color-secundario;
-            }
-        }
-    }
+			&:hover {
+				border-bottom: 2px solid $color-secundario;
+			}
+		}
+	}
 }

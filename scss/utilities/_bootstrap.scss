@@ -1,15 +1,15 @@
 .btn-primary {
-    background-color: $color-boton;
+	background-color: map-get($color-boton-primario, idle);
 
-    &:hover {
-        background-color: $color-boton-hover;
-    }
+	&:hover {
+		background-color: map-get($color-boton-primario, hover);
+	}
 }
 
 .carousel-indicators [data-bs-target] {
-    position: relative;
-    width: 60px;
-    height: 26px;
-    border: none;
-    border-radius: 24px;
+	position: relative;
+	width: 60px;
+	height: 26px;
+	border: none;
+	border-radius: 24px;
 }

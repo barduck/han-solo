@@ -6,7 +6,7 @@ section {
 	padding-bottom: 40px;
 
 	h1 {
-		font-family: "Frank Ruhl Libre", serif;
+		font-family: $fuente-titulos;
 		font-size: 6rem;
 		line-height: 6rem;
 		margin-bottom: 2rem;
@@ -52,7 +52,7 @@ section {
 	border-radius: 40px;
 
 	h1 {
-		font-family: "Frank Ruhl Libre", serif;
+		font-family: $fuente-titulos;
 		font-size: 4rem;
 		line-height: 4rem;
 		padding-bottom: 1rem;
@@ -137,9 +137,10 @@ section {
 	input,
 	textarea,
 	button {
-		width: 100%;
-		padding: 0.5rem;
-		font-size: 1.1rem;
+		@extend .input;
+	}
+	button[type="reset"] {
+		margin-top: 10px;
 	}
 }
 

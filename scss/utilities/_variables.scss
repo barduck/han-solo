@@ -2,5 +2,33 @@
 
 $color-primario: #54b3d6;
 $color-secundario: #a7bfe7;
-$color-boton: #566ca8;
-$color-boton-hover: #233370;
+
+// Fuente
+
+$fuente-principal: "Inter", sans-serif;
+$fuente-titulos: "Frank Ruhl Libre", serif;
+
+// Botones (map-get)
+
+$color-boton-primario: (
+	idle: #566ca8,
+	hover: #233370,
+);
+
+// Listed item (mixin)
+
+@mixin listed-item($display, $text-align, $text-transform, $padding) {
+	display: $display;
+	text-align: $text-align;
+	text-transform: $text-transform;
+	padding: $padding;
+}
+
+// Input (extend)
+
+.input {
+	font-family: $fuente-principal;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1.1rem;
+}

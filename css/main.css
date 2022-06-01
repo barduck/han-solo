@@ -1,3 +1,11 @@
+.input, .contacto input,
+.contacto textarea,
+.contacto button {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem; }
+
 .btn-primary {
   background-color: #566ca8; }
   .btn-primary:hover {
@@ -27,10 +35,10 @@ button {
   cursor: pointer; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: 'header header header' 'main main main' 'footer footer footer'; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
 main {
   grid-area: main;
@@ -58,7 +66,7 @@ header {
   max-width: 1300px;
   margin: auto; }
   header .logo {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: "Frank Ruhl Libre", serif;
     font-size: 3rem;
     line-height: 3.3rem;
     color: #85a5da;
@@ -76,8 +84,8 @@ nav {
   nav li {
     display: inline-block;
     text-align: center;
-    padding: 1rem;
     text-transform: uppercase;
+    padding: 1rem;
     transition: border 0.2s ease-in-out, border 0.2s ease-in-out; }
     nav li.marcado a {
       color: #54b3d6; }
@@ -195,12 +203,8 @@ section {
     display: block;
     width: 100%;
     padding: 0.5rem 0; }
-  .contacto input,
-  .contacto textarea,
-  .contacto button {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1.1rem; }
+  .contacto button[type="reset"] {
+    margin-top: 10px; }
 
 .parrafoResaltado {
   font-weight: bold;
@@ -219,21 +223,20 @@ footer {
       text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
       font-size: 1.5rem;
       opacity: 0.6; }
-    footer #newsletter input[type='email'] {
-      font-family: 'Inter', sans-serif;
+    footer #newsletter input[type="email"] {
       width: 300px;
       padding: 1rem;
       font-size: 1.5rem;
       border: 1px solid rgba(0, 0, 0, 0.2); }
-    footer #newsletter input[type='button'] {
+    footer #newsletter input[type="button"] {
       padding: 1rem;
       font-size: 1.5rem;
       border: 1px solid rgba(0, 0, 0, 0.2);
       background-color: #566ca8;
       color: white;
       cursor: pointer; }
-      footer #newsletter input[type='button']:hover {
-        background-color: #233370; }
+      footer #newsletter input[type="button"]:hover {
+        background-color: #566ca8; }
   footer .redesSociales {
     display: flex;
     justify-content: center;
@@ -241,8 +244,8 @@ footer {
     footer .redesSociales li {
       display: inline-block;
       text-align: center;
-      padding: 1rem;
       text-transform: uppercase;
+      padding: 1rem;
       border-bottom: 2px solid white; }
       footer .redesSociales li:hover {
         border-bottom: 2px solid #a7bfe7; }
@@ -302,4 +305,21 @@ footer {
   footer #newsletter input[type="button"] {
     width: 90%;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  footer .redesSociales {
+    padding: 0; } }
+
+@media (max-width: 420px) {
+  .index h1 {
+    font-size: 2.5rem;
+    line-height: 3rem; }
+  .sobreMi img {
+    width: 70%; }
+  footer .redesSociales {
+    display: block;
+    padding: 0; }
+    footer .redesSociales li {
+      display: block;
+      width: 60%;
+      margin: auto;
+      padding: 1rem; } }
