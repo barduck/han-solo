@@ -35,6 +35,9 @@ button {
   cursor: pointer; }
 
 body {
+  padding-top: 120px; }
+
+body {
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -78,9 +81,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 120px; }
-  nav ul {
-    background-color: white; }
+  min-height: 120px;
+  background-color: white; }
+  nav .container-fluid {
+    max-width: 1300px; }
   nav li {
     display: inline-block;
     text-align: center;
@@ -251,6 +255,7 @@ footer {
         border-bottom: 2px solid #a7bfe7; }
 
 @media (max-width: 1400px) {
+  nav .container-fluid,
   main section,
   header {
     max-width: 90%; }
