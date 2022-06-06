@@ -35,13 +35,11 @@ button {
   cursor: pointer; }
 
 body {
-  padding-top: 120px; }
-
-body {
+  padding-top: 120px;
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: 'header header header' 'main main main' 'footer footer footer'; }
 
 main {
   grid-area: main;
