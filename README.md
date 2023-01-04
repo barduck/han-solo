@@ -14,6 +14,7 @@ This is my final project for "Web Developer" course at Coderhouse.
 - When and how to use CSS flexbox layout.
 - Responsive techniques like mobile-first concepts.
 - Grid system of Bootstrap.
+- How to properly use Github.
 
 ### 🗒 Final notes
 - I was qualified as a Top 10 student for this project.
