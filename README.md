@@ -2,6 +2,8 @@
 
 This is my final project for "Web Developer" course at Coderhouse.
 
+Live: https://han-solo.netlify.app
+
 ## What I did 👇
 - I made it from scratch, using HTML and CSS with [SASS](https://sass-lang.com/).
 - I integrated [animate.css](https://animate.style/) for some animated effects.
