@@ -15,6 +15,6 @@ This is my final project for "Web Developer" course at Coderhouse.
 - Responsive techniques like mobile-first concepts.
 - Grid system of Bootstrap.
 
-### Final notes 🗒
+### 🗒 Final notes
 - I was qualified as a Top 10 student for this project.
 - I'm not very satisfied with the look and design that I did, although it was not gradeable in the course.
